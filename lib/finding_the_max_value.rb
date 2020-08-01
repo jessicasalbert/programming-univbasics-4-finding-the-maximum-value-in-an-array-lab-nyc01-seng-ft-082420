@@ -1,3 +1,13 @@
 def find_max_value(array)
-  # Add your solution here
+  if array.length == nil
+    return nil
+  end
+  
+  max = array[0]
+  for i in 1..(array.length)
+    if array[i] > max
+      max = array[i]
+    end
+  end
+  max
 end
